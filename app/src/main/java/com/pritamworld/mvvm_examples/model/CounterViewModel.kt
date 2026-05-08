@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
 class CounterViewModel: ViewModel() {
-    private val _count = MutableStateFlow(0)
+    private val _count = MutableStateFlow<Int>(0)
     val count: StateFlow<Int> = _count
 
     fun increment() {
