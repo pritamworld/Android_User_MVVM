@@ -1,6 +1,6 @@
-package com.pritamworld.mvvm_examples.usecase
+package com.pritamworld.mvvm_examples.domain.usecase
 
-import com.pritamworld.mvvm_examples.repository.UserRepository
+import com.pritamworld.mvvm_examples.domain.repository.UserRepository
 import javax.inject.Inject
 
 class GetUsersUseCase @Inject constructor(

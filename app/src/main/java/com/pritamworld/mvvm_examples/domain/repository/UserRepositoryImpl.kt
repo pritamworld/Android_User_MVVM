@@ -1,4 +1,4 @@
-package com.pritamworld.mvvm_examples.repository
+package com.pritamworld.mvvm_examples.domain.repository
 
 import com.pritamworld.mvvm_examples.api.UserApi
 import com.pritamworld.mvvm_examples.api.toDomain

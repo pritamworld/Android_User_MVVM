@@ -1,8 +1,8 @@
 package com.pritamworld.mvvm_examples.di
 
 import com.pritamworld.mvvm_examples.api.UserApi
-import com.pritamworld.mvvm_examples.repository.UserRepository
-import com.pritamworld.mvvm_examples.repository.UserRepositoryImpl
+import com.pritamworld.mvvm_examples.domain.repository.UserRepository
+import com.pritamworld.mvvm_examples.domain.repository.UserRepositoryImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
