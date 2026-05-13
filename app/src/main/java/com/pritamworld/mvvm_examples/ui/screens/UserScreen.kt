@@ -1,4 +1,4 @@
-package com.pritamworld.mvvm_examples
+package com.pritamworld.mvvm_examples.ui.screens
 
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import com.pritamworld.mvvm_examples.model.User

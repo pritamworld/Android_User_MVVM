@@ -1,8 +1,7 @@
 package com.pritamworld.mvvm_examples.di
 
-import com.pritamworld.mvvm_examples.api.PostApi
-import com.pritamworld.mvvm_examples.api.UserApi
-import com.pritamworld.mvvm_examples.db.AppDatabase
+import com.pritamworld.mvvm_examples.network.api.PostApi
+import com.pritamworld.mvvm_examples.network.api.UserApi
 import com.pritamworld.mvvm_examples.db.dao.PostDao
 import com.pritamworld.mvvm_examples.domain.repository.PostRepository
 import com.pritamworld.mvvm_examples.domain.repository.PostRepositoryImpl

@@ -1,8 +1,8 @@
 package com.pritamworld.mvvm_examples.domain.repository
 
-import com.pritamworld.mvvm_examples.api.UserApi
-import com.pritamworld.mvvm_examples.api.toDomain
-import com.pritamworld.mvvm_examples.api.toDto
+import com.pritamworld.mvvm_examples.network.api.UserApi
+import com.pritamworld.mvvm_examples.network.dto.toDomain
+import com.pritamworld.mvvm_examples.network.dto.toDto
 import com.pritamworld.mvvm_examples.model.User
 import javax.inject.Inject
 

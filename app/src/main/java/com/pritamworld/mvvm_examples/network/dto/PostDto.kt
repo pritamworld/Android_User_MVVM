@@ -1,4 +1,4 @@
-package com.pritamworld.mvvm_examples.api
+package com.pritamworld.mvvm_examples.network.dto
 
 import com.pritamworld.mvvm_examples.db.entity.PostEntity
 import com.pritamworld.mvvm_examples.model.Post

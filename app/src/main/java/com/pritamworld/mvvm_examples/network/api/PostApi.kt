@@ -1,5 +1,6 @@
-package com.pritamworld.mvvm_examples.api
+package com.pritamworld.mvvm_examples.network.api
 
+import com.pritamworld.mvvm_examples.network.dto.PostDto
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.DELETE

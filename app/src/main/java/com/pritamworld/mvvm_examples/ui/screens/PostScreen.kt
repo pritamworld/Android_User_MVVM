@@ -1,4 +1,4 @@
-package com.pritamworld.mvvm_examples
+package com.pritamworld.mvvm_examples.ui.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

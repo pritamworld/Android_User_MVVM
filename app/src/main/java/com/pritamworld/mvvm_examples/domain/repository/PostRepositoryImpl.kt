@@ -1,9 +1,9 @@
 package com.pritamworld.mvvm_examples.domain.repository
 
-import com.pritamworld.mvvm_examples.api.PostApi
-import com.pritamworld.mvvm_examples.api.toDomain
-import com.pritamworld.mvvm_examples.api.toDto
-import com.pritamworld.mvvm_examples.api.toEntity
+import com.pritamworld.mvvm_examples.network.api.PostApi
+import com.pritamworld.mvvm_examples.network.dto.toDomain
+import com.pritamworld.mvvm_examples.network.dto.toDto
+import com.pritamworld.mvvm_examples.network.dto.toEntity
 import com.pritamworld.mvvm_examples.core.common.networkBoundResource
 import com.pritamworld.mvvm_examples.db.dao.PostDao
 import com.pritamworld.mvvm_examples.model.Post
