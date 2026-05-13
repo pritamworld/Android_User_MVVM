@@ -1,5 +1,6 @@
 package com.pritamworld.mvvm_examples.domain.repository
 
+import android.util.Log
 import com.pritamworld.mvvm_examples.network.api.PostApi
 import com.pritamworld.mvvm_examples.network.dto.toDomain
 import com.pritamworld.mvvm_examples.network.dto.toDto
@@ -79,5 +80,16 @@ class PostRepositoryImpl @Inject constructor(
         return safeApiCall {
             api.deletePost(id)
         }
+    }
+
+    override suspend fun syncPosts() {
+        Log.d("syncPosts", "---STARTED---")
+        val remotePosts = api.getPosts()
+
+        dao.clearPosts()
+
+        dao.insertPosts(
+            remotePosts.map { it.toEntity() }
+        )
     }
 }

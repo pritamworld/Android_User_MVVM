@@ -15,4 +15,6 @@ interface PostRepository {
     ): Result<Post>
 
     suspend fun deletePost(id: Int): Result<Unit>
+
+    suspend fun syncPosts()
 }

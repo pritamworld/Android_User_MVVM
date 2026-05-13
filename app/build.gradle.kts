@@ -81,11 +81,16 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0")
 
     // Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
 
     //Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
     annotationProcessor(libs.room.compiler)
+    implementation("androidx.work:work-runtime-ktx:2.11.2")
+
+    implementation("androidx.hilt:hilt-work:1.1.0")
+
+    ksp("androidx.hilt:hilt-compiler:1.3.0")
 }

@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.ViewModelProvider
 import com.pritamworld.mvvm_examples.model.CounterViewModel
+import com.pritamworld.mvvm_examples.sync.SyncScheduler
 import com.pritamworld.mvvm_examples.ui.theme.MVVM_ExamplesTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -21,6 +22,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         val viewModel = ViewModelProvider(this)[CounterViewModel::class.java]
         enableEdgeToEdge()
+
+        SyncScheduler.startPostSync(this)
+
         setContent {
             MVVM_ExamplesTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
