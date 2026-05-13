@@ -2,10 +2,10 @@ package com.pritamworld.mvvm_examples.model
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.pritamworld.mvvm_examples.domain.usecase.CreateUserUseCase
-import com.pritamworld.mvvm_examples.domain.usecase.DeleteUserUseCase
-import com.pritamworld.mvvm_examples.domain.usecase.GetUsersUseCase
-import com.pritamworld.mvvm_examples.domain.usecase.UpdateUserUseCase
+import com.pritamworld.mvvm_examples.domain.usecase.user.CreateUserUseCase
+import com.pritamworld.mvvm_examples.domain.usecase.user.DeleteUserUseCase
+import com.pritamworld.mvvm_examples.domain.usecase.user.GetUsersUseCase
+import com.pritamworld.mvvm_examples.domain.usecase.user.UpdateUserUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
 import kotlinx.coroutines.flow.MutableStateFlow

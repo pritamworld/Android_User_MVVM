@@ -30,7 +30,8 @@ class MainActivity : ComponentActivity() {
 //                        modifier = Modifier.padding(innerPadding)
 //                    )
                   //  CounterScreen(viewModel)
-                    UserScreen()
+                   // UserScreen()
+                   PostScreen()
                 }
             }
         }

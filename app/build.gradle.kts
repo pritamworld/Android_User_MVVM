@@ -3,7 +3,13 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     id("com.google.devtools.ksp")
     alias(libs.plugins.hilt)
+    alias(libs.plugins.room)
 }
+
+room {
+    schemaDirectory("$projectDir/schemas")
+}
+
 
 android {
     namespace = "com.pritamworld.mvvm_examples"
@@ -42,6 +48,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.compose.runtime)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -75,4 +82,10 @@ dependencies {
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
+
+    //Room
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+    annotationProcessor(libs.room.compiler)
 }
