@@ -1,8 +1,8 @@
 package com.pritamworld.mvvm_examples.ui.screens
 
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
-import com.pritamworld.mvvm_examples.model.User
-import com.pritamworld.mvvm_examples.model.UserViewModel
+import com.pritamworld.mvvm_examples.domain.model.User
+import com.pritamworld.mvvm_examples.domain.model.UserViewModel
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items

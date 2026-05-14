@@ -1,6 +1,6 @@
 package com.pritamworld.mvvm_examples.network.dto
 
-import com.pritamworld.mvvm_examples.model.User
+import com.pritamworld.mvvm_examples.domain.model.User
 
 data class UserDto(
     val id: Int?,

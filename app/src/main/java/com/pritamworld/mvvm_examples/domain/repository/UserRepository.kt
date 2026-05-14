@@ -1,6 +1,6 @@
 package com.pritamworld.mvvm_examples.domain.repository
 
-import com.pritamworld.mvvm_examples.model.User
+import com.pritamworld.mvvm_examples.domain.model.User
 
 interface UserRepository {
     suspend fun getUsers(): List<User>

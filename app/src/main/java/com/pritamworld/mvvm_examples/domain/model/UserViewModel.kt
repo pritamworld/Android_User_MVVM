@@ -1,4 +1,4 @@
-package com.pritamworld.mvvm_examples.model
+package com.pritamworld.mvvm_examples.domain.model
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
