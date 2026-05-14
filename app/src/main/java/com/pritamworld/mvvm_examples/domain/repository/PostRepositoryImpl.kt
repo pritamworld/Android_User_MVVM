@@ -7,7 +7,7 @@ import com.pritamworld.mvvm_examples.network.dto.toDto
 import com.pritamworld.mvvm_examples.network.dto.toEntity
 import com.pritamworld.mvvm_examples.core.common.networkBoundResource
 import com.pritamworld.mvvm_examples.db.dao.PostDao
-import com.pritamworld.mvvm_examples.model.Post
+import com.pritamworld.mvvm_examples.domain.model.Post
 import com.pritamworld.mvvm_examples.core.utils.safeApiCall
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject

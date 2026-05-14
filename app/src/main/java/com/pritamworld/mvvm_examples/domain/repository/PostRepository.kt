@@ -1,6 +1,6 @@
 package com.pritamworld.mvvm_examples.domain.repository
 
-import com.pritamworld.mvvm_examples.model.Post
+import com.pritamworld.mvvm_examples.domain.model.Post
 import kotlinx.coroutines.flow.Flow
 import com.pritamworld.mvvm_examples.core.common.Result
 interface PostRepository {

@@ -1,4 +1,4 @@
-package com.pritamworld.mvvm_examples.model
+package com.pritamworld.mvvm_examples.domain.model
 
 data class Post(
     val userId: Int,

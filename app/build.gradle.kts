@@ -4,12 +4,24 @@ plugins {
     id("com.google.devtools.ksp")
     alias(libs.plugins.hilt)
     alias(libs.plugins.room)
+    alias(libs.plugins.apollo)
 }
 
 room {
     schemaDirectory("$projectDir/schemas")
 }
 
+apollo {
+    service("service") {
+        packageName.set("com.pritamworld.mvvm_examples")
+        // This creates a downloadStarwarsApolloSchemaFromIntrospection task
+        introspection {
+            endpointUrl.set("https://api.spacex.land/graphql/")
+            // The path is interpreted relative to the current project
+            schemaFile.set(file("src/main/graphql/com/pritamworld/mvvm_examples/schema.graphqls"))
+        }
+    }
+}
 
 android {
     namespace = "com.pritamworld.mvvm_examples"
@@ -88,9 +100,10 @@ dependencies {
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
     annotationProcessor(libs.room.compiler)
-    implementation("androidx.work:work-runtime-ktx:2.11.2")
 
-    implementation("androidx.hilt:hilt-work:1.1.0")
+    implementation(libs.work.runtime)
+    implementation(libs.hilt.work)
+    ksp(libs.hilt.work.compiler)
 
-    ksp("androidx.hilt:hilt-compiler:1.3.0")
+    implementation(libs.apollo.runtime)
 }

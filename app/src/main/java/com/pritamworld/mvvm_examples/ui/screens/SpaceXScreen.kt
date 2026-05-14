@@ -1,7 +1,9 @@
 package com.pritamworld.mvvm_examples.ui.screens
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -14,24 +16,32 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
-import com.pritamworld.mvvm_examples.domain.model.PostViewModel
 import com.pritamworld.mvvm_examples.core.common.Result
-import com.pritamworld.mvvm_examples.domain.model.Post
+import com.pritamworld.mvvm_examples.domain.model.Launch
+import com.pritamworld.mvvm_examples.domain.model.SpaceXViewModel
 
 @Composable
-fun PostScreen(
-    viewModel: PostViewModel = hiltViewModel()
+fun SpaceXScreen(
+    viewModel: SpaceXViewModel = hiltViewModel()
 ) {
 
-    val state by viewModel.posts.collectAsState()
+    val state by viewModel.state.collectAsState()
 
     when (state) {
 
         is Result.Loading -> {
-            CircularProgressIndicator()
+
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+
+                CircularProgressIndicator()
+            }
         }
 
         is Result.Error -> {
@@ -43,12 +53,12 @@ fun PostScreen(
 
         is Result.Success -> {
 
-            val posts =
-                (state as Result.Success<List<Post>>).data
+            val launches =
+                (state as Result.Success<List<Launch>>).data
 
             LazyColumn {
 
-                items(posts) { post ->
+                items(launches) { launch ->
 
                     Card(
                         modifier = Modifier
@@ -61,8 +71,8 @@ fun PostScreen(
                         ) {
 
                             Text(
-                                text = post.title,
-                                style = MaterialTheme.typography.titleMedium
+                                text = launch.missionName,
+                                style = MaterialTheme.typography.titleLarge
                             )
 
                             Spacer(
@@ -70,7 +80,15 @@ fun PostScreen(
                             )
 
                             Text(
-                                text = post.body
+                                text = launch.rocketName
+                            )
+
+                            Text(
+                                text = launch.siteName
+                            )
+
+                            Text(
+                                text = launch.launchDate
                             )
                         }
                     }

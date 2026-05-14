@@ -1,7 +1,7 @@
 package com.pritamworld.mvvm_examples.domain.usecase.post
 
 import com.pritamworld.mvvm_examples.domain.repository.PostRepository
-import com.pritamworld.mvvm_examples.model.Post
+import com.pritamworld.mvvm_examples.domain.model.Post
 import javax.inject.Inject
 
 class CreatePostUseCase @Inject constructor(

@@ -1,7 +1,7 @@
 package com.pritamworld.mvvm_examples.network.dto
 
 import com.pritamworld.mvvm_examples.db.entity.PostEntity
-import com.pritamworld.mvvm_examples.model.Post
+import com.pritamworld.mvvm_examples.domain.model.Post
 
 data class PostDto(
     val userId: Int,

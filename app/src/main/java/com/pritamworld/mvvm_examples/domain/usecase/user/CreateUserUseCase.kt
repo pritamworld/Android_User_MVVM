@@ -1,6 +1,6 @@
 package com.pritamworld.mvvm_examples.domain.usecase.user
 
-import com.pritamworld.mvvm_examples.model.User
+import com.pritamworld.mvvm_examples.domain.model.User
 import com.pritamworld.mvvm_examples.domain.repository.UserRepository
 import javax.inject.Inject
 
