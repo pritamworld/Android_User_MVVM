@@ -11,17 +11,17 @@ room {
     schemaDirectory("$projectDir/schemas")
 }
 
-apollo {
-    service("service") {
-        packageName.set("com.pritamworld.mvvm_examples")
-        // This creates a downloadStarwarsApolloSchemaFromIntrospection task
-        introspection {
-            endpointUrl.set("https://api.spacex.land/graphql/")
-            // The path is interpreted relative to the current project
-            schemaFile.set(file("src/main/graphql/com/pritamworld/mvvm_examples/schema.graphqls"))
-        }
-    }
-}
+//apollo {
+//    service("service") {
+//        packageName.set("com.pritamworld.mvvm_examples")
+//        // This creates a downloadStarwarsApolloSchemaFromIntrospection task
+//        introspection {
+//            endpointUrl.set("https://api.spacex.land/graphql/")
+//            // The path is interpreted relative to the current project
+//            schemaFile.set(file("src/main/graphql/com/pritamworld/mvvm_examples/schema.graphqls"))
+//        }
+//    }
+//}
 
 android {
     namespace = "com.pritamworld.mvvm_examples"
