@@ -17,7 +17,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
-import com.pritamworld.mvvm_examples.domain.model.PostViewModel
+import com.pritamworld.mvvm_examples.ui.viewmodels.PostViewModel
 import com.pritamworld.mvvm_examples.core.common.Result
 import com.pritamworld.mvvm_examples.domain.model.Post
 

@@ -1,7 +1,8 @@
-package com.pritamworld.mvvm_examples.domain.model
+package com.pritamworld.mvvm_examples.ui.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.pritamworld.mvvm_examples.domain.model.User
 import com.pritamworld.mvvm_examples.domain.usecase.user.CreateUserUseCase
 import com.pritamworld.mvvm_examples.domain.usecase.user.DeleteUserUseCase
 import com.pritamworld.mvvm_examples.domain.usecase.user.GetUsersUseCase

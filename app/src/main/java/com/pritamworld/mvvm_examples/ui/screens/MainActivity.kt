@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.ViewModelProvider
-import com.pritamworld.mvvm_examples.domain.model.CounterViewModel
+import com.pritamworld.mvvm_examples.ui.viewmodels.CounterViewModel
 import com.pritamworld.mvvm_examples.sync.SyncScheduler
 import com.pritamworld.mvvm_examples.ui.theme.MVVM_ExamplesTheme
 import dagger.hilt.android.AndroidEntryPoint

@@ -1,4 +1,4 @@
-package com.pritamworld.mvvm_examples.domain.model
+package com.pritamworld.mvvm_examples.ui.viewmodels
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
